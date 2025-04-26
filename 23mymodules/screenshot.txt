@@ -1,0 +1,51 @@
+anujupadhyay@MacBookAir 23mymodules % go build  .
+anujupadhyay@MacBookAir 23mymodules % go run main.go
+Hello mod in golang
+Hey there mod users
+^Csignal: interrupt
+anujupadhyay@MacBookAir 23mymodules % go mod tidy
+anujupadhyay@MacBookAir 23mymodules % go mod verify
+all modules verified
+anujupadhyay@MacBookAir 23mymodules % go list
+github.com/anuj123upadhyay/mymodules
+anujupadhyay@MacBookAir 23mymodules % go list -m all
+github.com/anuj123upadhyay/mymodules
+github.com/gorilla/mux v1.8.1
+anujupadhyay@MacBookAir 23mymodules % go list -m -versions
+ github.com/gorilla/mux
+github.com/gorilla/mux v1.2.0 v1.3.0 v1.4.0 v1.5.0 v1.6.0 v1.6.1 v1.6.2 v1.7.0 v1.7.1 v1.7.2 v1.7.3 v1.7.4 v1.8.0 v1.8.1
+anujupadhyay@MacBookAir 23mymodules % go mod tidy 
+anujupadhyay@MacBookAir 23mymodules % go mod why github.co
+m/gorilla/mux
+# github.com/gorilla/mux
+github.com/anuj123upadhyay/mymodules
+github.com/gorilla/mux
+anujupadhyay@MacBookAir 23mymodules % go mod graph
+github.com/anuj123upadhyay/mymodules github.com/gorilla/mux@v1.8.1
+github.com/anuj123upadhyay/mymodules go@1.24.2
+go@1.24.2 toolchain@go1.24.2
+anujupadhyay@MacBookAir 23mymodules % go mod edit -go
+flag needs an argument: -go
+usage: go mod edit [editing flags] [-fmt|-print|-json] [go.mod]
+Run 'go help mod edit' for details.
+anujupadhyay@MacBookAir 23mymodules % go mod vender
+go mod: unknown command
+Run 'go help mod' for usage.
+anujupadhyay@MacBookAir 23mymodules % go mod vendor
+anujupadhyay@MacBookAir 23mymodules % go run -mod=vendor main.go   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
